@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistaria Solutions</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <!-- 🔹 Navigation Bar -->
+    <div class="header">
+        <nav>
+            <img src="img/Vistaria Solutions Pvt Ltd (2).jpg" width="300px">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 🔹 Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Solutions Beyond Expectations</h1>
+            <p>Unlock the power of Solutions</p>
+            <a href="#services" class="btn">View Services</a>
+        </div>
+    </section>
+
+
+
+
+    <!-- 🔹 About Section -->
+    <section id="about" class="about-section">
+        <!-- Add your about content here -->
+    </section>
+
+    <!-- 🔹 Contact Section -->
+    <section id="contact" class="contact-section">
+        <!-- Add your contact content here -->
+    </section>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script> 
+
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <img src="img/software-implementation.jpg" alt="About Us Image">
+            <div class="about-text">
+                <h2>Your Trusted Partner</h2>
+                <h3>Empowering Businesses with Excellence</h3>
+                <p>Delivering comprehensive solutions tailored to meet your business needs. Located in Colombo, Sri Lanka, our expert team provides a wide range of services, including business accounting, POS software implementation, web development, and social media marketing. We are dedicated to helping you streamline operations, boost productivity, and enhance your online presence. Partner with us to transform your business into a thriving success.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 🟢 Services Section -->
+    <div class="products">
+        <!-- Service 1 -->
+        <div class="box">
+            <img src="img/ERP.jpg">
+            <div class="point">
+                <h2>ERP Software Solutions</h2>
+                <ul>
+                    <li>Data Migration</li>
+                    <li>System Installation and Configuration</li>
+                    <li>Training and User Support</li>
+                    <li>Go-Live Support</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="box">
+            <img src="img/WEB DEV.jpg">
+            <div class="point">
+                <h2>Website Development</h2>
+                <ul>
+                    <li>Fast & Secure Website</li>
+                    <li>E-Commerce Solutions</li>
+                    <li>Responsive & SEO-Friendly</li>
+                    <li>Custom Website Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="box">
+            <img src="img/DM.jpg">
+            <div class="point">
+                <h2>Digital Marketing</h2>
+                <ul>
+                    <li>SEO Optimization</li>
+                    <li>Social Media Marketing</li>
+                    <li>Content Marketing</li>
+                    <li>Paid Advertising</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="box">
+            <img src="img/BK.jpg">
+            <div class="point">
+                <h2>Bookkeeping Services</h2>
+                <ul>
+                    <li>Charts of Accounts Setup</li>
+                    <li>Invoices Sorting and Journal Entries</li>
+                    <li>Bank Reconciliation</li>
+                    <li>Ledgers & Subledgers</li>
+                    <li>Monthly/Quarterly Financial Statements</li>
+                    <li>Familiar with QuickBooks, Busy Software</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="box">
+            <img src="img/INVENTORY.jpg">
+            <div class="point">
+                <h2>Inventory Management Solutions</h2>
+                <ul>
+                    <li>ERP-Based Inventory Management Systems</li>
+                    <li>Inventory Reporting and Analytics</li>
+                    <li>Physical Inventory Counts</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="box">
+            <img src="img/OFFICE EQUIPMENT.jpg">
+            <div class="point">
+                <h2>Office Equipment Supply</h2>
+                <ul>
+                    <li>Advanced Point of Sale Systems</li>
+                    <li>Networking Equipment (Routers, Switches)</li>
+                    <li>Computer Accessories (Keyboard, Monitors, etc.)</li>
+                    <li>Printers & Scanners</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="box">
+            <img src="img/NETWORKING AND HARWARE.jpg">
+            <div class="point">
+                <h2>Networking & Hardware Configuration</h2>
+                <ul>
+                    <li>Network Setup & Optimization</li>
+                    <li>Support & Troubleshooting</li>
+                    <li>Hardware Configuration & Repairs</li>
+                    <li>Security Solutions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!-- 🔹 Contact Us Section -->
+<section class="contact">
+    <h1>Connect with Us for Expert Solutions</h1>
+    <h3>Get in Touch</h3>
+
+    <div class="contact-container">
+        <!-- 🔹 Contact Details -->
+        <div class="contact-details">
+            <div class="contact-card">
+                <i class="fas fa-phone-alt"></i>
+                <p> +94769028900</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:vistariasolutions@gmail.com">vistariasolutions@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>No. 126, Galle Road, Colombo-06</p>
+            </div>
+        </div>
+
+        <!-- 🔹 Google Map -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps?q=No.126,+Galle+Road,+Colombo&output=embed" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+</body>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h2>Vistaria Solutions</h2>
+            <p>,No. 126, Galle Road, Colombo-06, Sri Lanka</p>
+            <p>Contact: +94769028900</p>
+        </div>
+        <div class="footer-social">
+            <p>Follow Us:</p>
+            <a href="https://lk.linkedin.com/company/vistaria-solutions-pvt-ltd" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1EKFZEvbU8/" target="_blank" class="social-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+
+
+</html>
